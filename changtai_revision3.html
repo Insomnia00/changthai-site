@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chang Thai Restaurant has been a Christchurch culinary gem since 2019. Visit us in Hornby for authentic Tom Yum, Khao Soi, and Massaman curry. Order online for takeaway or book a table!">
+    <title>Chang Thai Restaurant | Authentic Thai Cuisine in Hornby, Christchurch</title>
+    
+    <!-- GEO & AEO Optimization: Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Chang Thai Restaurant",
+      "image": "https://changthai.co.nz/images/hero.jpg",
+      "@id": "https://changthai.co.nz",
+      "url": "https://changthai.co.nz",
+      "telephone": "+6433497069",
+      "priceRange": "$$",
+      "menu": "https://ordering.changthai.co.nz/",
+      "servesCuisine": "Thai",
+      "acceptsReservations": "true",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "21 Shands Road",
+        "addressLocality": "Hornby",
+        "addressRegion": "Christchurch",
+        "postalCode": "8042",
+        "addressCountry": "NZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -43.5422,
+        "longitude": 172.5186
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:30",
+          "closes": "14:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "16:30",
+          "closes": "20:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/p/Chang-Thai-Hornby-61567894111745/",
+        "https://www.instagram.com/chang_thai_hornby"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Base Styles for Speed & Accessibility */
+        :root {
+            --primary-color: #d32f2f;
+            --text-dark: #333;
+            --text-light: #fff;
+            --bg-light: #f9f9f9;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: var(--text-light);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); }
+        .nav-links a { margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary-color); }
+        .btn {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: opacity 0.3s;
+        }
+        .btn:hover { opacity: 0.9; }
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--text-light);
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; }
+        .hero .btn { margin: 10px; font-size: 1.1rem; }
+
+        /* Sections */
+        section { padding: 60px 5%; scroll-margin-top: 80px; }
+        .bg-grey { background: var(--bg-light); }
+        h2 { font-size: 2.2rem; text-align: center; margin-bottom: 40px; color: var(--primary-color); }
+        
+        /* About & Reviews Section */
+        .about-content { max-width: 800px; margin: 0 auto; text-align: center; font-size: 1.1rem; }
+        .review-box { background: var(--bg-light); padding: 20px; border-radius: 8px; margin: 20px 0; font-style: italic; border-left: 4px solid var(--primary-color); }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .menu-item {
+            background: var(--text-light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .menu-item h3 { margin-top: 0; color: var(--primary-color); }
+
+        /* Contact Section & Form */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .contact-info { flex: 1; min-width: 300px; font-size: 1.1rem; }
+        .contact-map { flex: 1; min-width: 300px; }
+        .contact-map iframe { width: 100%; height: 250px; border: 0; border-radius: 8px; margin-bottom: 20px; }
+        
+        /* Simple Form Styles */
+        .contact-form { display: flex; flex-direction: column; gap: 10px; }
+        .contact-form input, .contact-form textarea {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;
+        }
+        .contact-form button {
+            background: var(--text-dark); color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; font-weight: bold;
+        }
+        .contact-form button:hover { background: var(--primary-color); }
+
+        /* Footer */
+        footer { background: #222; color: #ddd; text-align: center; padding: 40px 5%; }
+        footer p { margin: 5px 0; }
+        .social-links { margin-top: 20px; }
+        .social-links a { color: white; margin: 0 10px; font-weight: bold; text-decoration: underline; }
+        
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Chang Thai</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div>
+            <a href="https://booking.changthai.co.nz/" class="btn btn-outline" rel="noopener noreferrer">Book Table</a>
+            <a href="https://ordering.changthai.co.nz/" class="btn" rel="noopener noreferrer">Order Online</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Authentic Thai Cuisine in the Heart of Hornby</h1>
+            <p>From the fiery kick of our classic Tom Yum to the creamy comfort of our carefully simmered Massaman curry.</p>
+            <a href="https://ordering.changthai.co.nz/" class="btn">Order Pickup or Delivery</a>
+            <a href="https://booking.changthai.co.nz/" class="btn btn-outline" style="background: white;">Reserve Your Table</a>
+        </section>
+
+        <section id="about" class="about-content">
+            <h2>A Christchurch Culinary Gem Since 2019</h2>
+            <p>Chang Thai Restaurant has been passionately serving what many consider the most authentic Thai cuisine in New Zealand. We pair exceptional food with a warm, cozy atmosphere and genuinely friendly service.</p>
+            
+            <!-- Hardcoded reviews for AI Crawlers -->
+            <div id="reviews">
+                <div class="review-box">
+                    "Absolutely the best Thai food in the Hornby area! The portions are generous, and the flavours are incredibly authentic."
+                </div>
+                <div class="review-box">
+                    "Fast, fresh, and friendly. We order online every Friday, and it’s always piping hot and ready on time."
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="https://review.posanywhere.co.nz/?id=7t4Sqh5w78KmnO8XaSf3" class="btn" target="_blank" rel="noopener noreferrer">Leave Us a Review</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="bg-grey">
+            <h2>Our Signature Thai Dishes</h2>
+            <div class="menu-grid">
+                <article class="menu-item">
+                    <h3>Khao Soi (Northern Thai Curry Noodles)</h3>
+                    <p>Our highly recommended signature dish. A rich, coconut-based curry soup served with soft and crispy egg noodles.</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Classic Tom Yum</h3>
+                    <p>Experience the fiery kick of our classic Thai soup, expertly balancing spicy, sour, and aromatic flavors.</p>
+                </article>
+                <article class="menu-item">
+                    <h3>Massaman Curry</h3>
+                    <p>Experience the creamy comfort of a carefully simmered Massaman curry. A mild, deeply flavorful dish.</p>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://ordering.changthai.co.nz/" class="btn">View Full Menu & Order Now</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch & Find Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>📍 Address</h3>
+                    <p>21 Shands Road, Hornby, Christchurch 8042</p>
+                    
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+6433497069" style="color: var(--primary-color); font-weight: bold;">03 349 7069</a></p>
+                    
+                    <h3>🕒 Hours</h3>
+                    <p>Lunch: 11:30 AM - 2:30 PM (Tue-Sun)<br>
+                       Dinner: 4:30 PM - 8:30 PM (Tue-Sun)<br>
+                       <em>Closed Mondays</em></p>
+                </div>
+                
+                <div class="contact-map">
+                    <!-- Google Map Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.4284852934444!2d172.5160250766127!3d-43.53508107111003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d32204c32b00d6b%3A0x6b4a5d85c4a45a6c!2s21%20Shands%20Road%2C%20Hornby%2C%20Christchurch%208042%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1716301234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <!-- Fast, Native HTML Contact Form -->
+                    <form class="contact-form" action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Visit Chang Thai</h2>
+        <p>📍 21 Shands Road, Hornby, Christchurch 8042</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/p/Chang-Thai-Hornby-61567894111745/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/chang_thai_hornby" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9em; color: #888;"><em>Powered by POS Anywhere</em></p>
+    </footer>
+
+</body>
+</html>
